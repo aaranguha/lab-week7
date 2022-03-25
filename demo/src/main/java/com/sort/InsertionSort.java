@@ -9,7 +9,7 @@ public class InsertionSort {
 
   public static void main(String[] args) {
     String fileName =
-      "/Users/aguha2021/Documents/GitHub/lab-week7/demo/src/main/java/com/sort/cupcake_3906.json";
+      "/Users/aguha2021/Documents/GitHub/lab-week7/demo/src/main/java/com/sort/cupcake_10.json";
     // String fileName =
     //   "/Users/jerom/Documents/GitHub/class-java/sort/demo/src/main/java/com/sort/cupcake_10.json";
 
@@ -23,7 +23,7 @@ public class InsertionSort {
     print(cupcakeNameArray);
 
     // sort
-    insertionSortRecursive(cupcakeNameArray);
+    insertionSort(cupcakeNameArray);
 
     // print sorted list
     System.out.println("----- Sorted array----- ");
@@ -97,11 +97,5 @@ public static void insertionSortRecursive(String[] arr) {
     }
 
 
-  // swap
-  public static void swap(String[] arr, int a, int b) {
-    String temp;
-    temp = arr[a];
-    arr[a] = arr[b];
-    arr[b] = temp;
-  }
+
 }

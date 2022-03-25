@@ -97,5 +97,11 @@ public static void insertionSortRecursive(String[] arr) {
     }
 
 
-
+  // swap
+  public static void swap(String[] arr, int a, int b) {
+    String temp;
+    temp = arr[a];
+    arr[a] = arr[b];
+    arr[b] = temp;
+  }
 }

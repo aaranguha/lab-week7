@@ -22,7 +22,7 @@ public class BubbleSort {
     print(cupcakeNameArray);
 
     // sort
-    insertionSortRecursive(cupcakeNameArray);
+    insertionSort(cupcakeNameArray);
 
     // print sorted list
     System.out.println("----- Sorted array----- ");
@@ -83,11 +83,30 @@ public class BubbleSort {
         arr[j+1] = arr[j];
         j--;
         count++;
+
     }
     arr[j+1] = arr[n-1];
-    
-    
+
 }
+
+
+  public static void insertionSort(String arr[])
+  {
+      int n = arr.length;
+      for (int i = 1; i < n; ++i) {
+          String key = arr[i];
+          int j = i - 1;
+
+
+          while (j >= 0 && arr[j].compareTo(key) > 0) {
+              arr[j + 1] = arr[j];
+              j = j - 1;
+              count++;
+          }
+          arr[j + 1] = key;
+        }
+      }
+  
 
 
   // swap
